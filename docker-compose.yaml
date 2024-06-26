@@ -1,6 +1,6 @@
 services:
   yourls:
-    image: yourls:1.9.2-apache
+    image: yourls:1.9.2-fpm-alpine
     container_name: yourls
     user: www-data:www-data
     restart: unless-stopped
