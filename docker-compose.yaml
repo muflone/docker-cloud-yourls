@@ -4,8 +4,9 @@ services:
     user: www-data:www-data
     networks:
       - public
-    env_file:
-      - ./app.env
+    environment:
+      - YOURLS_SITE=https://url.muflone.com
+      - YOURLS_PRIVATE=true
 #    volumes:
 #      - ./index.php:/var/www/html/index.php
 
