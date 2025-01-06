@@ -8,6 +8,8 @@ services:
       - public
     env_file:
       - ./app.env
+    volumes:
+      - ./index.php:/var/www/html/index.php
 
 networks:
   public:
