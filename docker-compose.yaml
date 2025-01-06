@@ -1,12 +1,13 @@
 services:
   app:
     image: yourls:1.9.2-fpm-alpine
+    container_name: yourl
+    restart: unless-stopped
     user: www-data:www-data
     networks:
       - public
-    environment:
-      - YOURLS_SITE=https://url.muflone.com
-      - YOURLS_PRIVATE=true
+    env_file:
+      - ./app.env
 
 networks:
   public:
