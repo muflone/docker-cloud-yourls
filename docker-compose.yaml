@@ -1,7 +1,7 @@
 services:
   app:
-    image: yourls:1.9.2-apache
     container_name: yourl
+    image: yourls:1.9.2-apache
     restart: unless-stopped
     user: www-data:www-data
     networks:
