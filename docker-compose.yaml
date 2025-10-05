@@ -5,13 +5,14 @@ services:
     restart: unless-stopped
     user: www-data:www-data
     networks:
-      - public
+      - default
     env_file:
       - ./app.env
     volumes:
       - ./index.php:/var/www/html/index.php
 
 networks:
-  public:
+  default:
+    name: web
     external: true
 
