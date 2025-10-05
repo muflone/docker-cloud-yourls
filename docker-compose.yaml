@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: yourl
+    container_name: yourls
     image: yourls:1.10.1-apache
     restart: unless-stopped
     user: www-data:www-data
